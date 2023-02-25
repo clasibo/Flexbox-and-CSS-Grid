@@ -1,0 +1,167 @@
+* {
+font-family: 'Open Sans', sans-serif;
+box-sizing: : border-box;
+margin: 0;
+padding:0;
+}
+
+body {
+	font-size: 16px;
+	line-height: 1.5;
+	background: white;
+	color: #333 ;
+}
+
+img {
+	max-width: 100%;
+  box-shadow: 10px 10px 8px #888888;
+}
+
+h1,
+h2 {
+  margin-bottom: 15px;
+}
+.logo,
+.boxlogo > img {
+	height: 35px;
+	width: 35px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.navbar {
+  background: #d4e1fc;
+  color: #fff;
+  height: 60px;
+}
+.navbar .firstlogo {
+  font-size: x-large;
+  font-weight: bold;
+  color: blue;
+}
+
+.navbar a
+ {  
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: blue;
+}
+.navbar a:hover {
+  color: darkblue;
+  box-shadow: 10px 10px 8px #888888;
+}
+.box a {
+	text-decoration: none;
+   color: blue;
+}
+.box a:hover {
+	color: darkblue;
+}
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  height: 100%;
+  background:#d4e1fc;
+
+}
+.navbar ul,
+.navbar .firstlogo {
+  display: flex;
+}
+.navbar ul li
+ {
+  margin-left: 50px;
+  margin-right: 20px;
+}
+.navbar .firstlogo p {
+margin-left:15px;
+
+}
+.header {
+ color: blue;
+  min-height: 400px;
+
+}
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.2;
+
+}
+.header img {
+  max-width: 400px;
+}
+.boxes .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 55px;
+}
+
+.box {
+  flex: 1;
+  background: #d4e1fc;
+  color: blue;
+  border-radius: 10px;
+  margin: 20px 10px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+  padding: 15px 20px;
+}
+
+.box i {
+  margin-right: 10px;
+}
+ .footer {
+text-align: center;
+margin-top: 200px}
+
+.header .container img {
+	flex: 2;
+}
+
+@media (max-width: 768px) {
+  .header .container {
+    flex-direction: column;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .boxes .container {
+    display: block;
+    text-align: center;
+    }
+  }
+
+  button {
+    border:2px solid blue;
+    background: #d4e1fc;
+    border-radius:50px;
+    height: 50px;
+    color: blue;
+    width: 200px;
+    cursor: pointer;
+    margin: 0;
+    position: absolute; 
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    }
+
+
+
+

@@ -1,0 +1,43 @@
+.container {  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 150px);
+  grid-auto-rows: 150px;
+  justify-content: center;
+  gap: 2rem 1rem;
+}
+/* in prima etapa s-a definit containerul ca fiind gird si s-au creat coloanele cf grid-template-columns -functie care specifica 
+numarul si latimea coloanelor dintr-un layout grid. In cazul nostru s-au creat 3 coloane si 2 randuri. Acelasi lucru se poate realiza
+daca dam 3 valori de 150px functiei grid-template-columns, aceasta valoare mentinandu-se si pentru distanta dintre randuri a.i. 
+elementele sa fie centrate in pagina. ATENTIE: elementele nu sunt responsive.
+Ptin valoarea repeat(auto-fit, 150px) am spus sa se creeze atat de multe casute cat sa incapa in dimensiunea containerului mentionata
+mai jos, avand distanta dintre elementele din coloana si din linie de 150px
+Mai jos, s-a creat un container flex pt intreb body-ul si s-au pozitionat elementele in centrul containerului. Margin a fost 
+setat la 0*/
+
+body {
+  display: flex;
+  align-items: center;
+  margin:0;
+  min-height: 100vh;
+  background: linear-gradient(-45deg, #ff9f4d 10%, #ffc857 0, #ffc857 90%, #ff9f4d 0, #ff9f4d 100%);
+}
+
+.container {
+  width: 100%;
+  max-width: 37.5rem;
+  padding: 0.5rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  background-color: white;
+  background-image: linear-gradient(hsl(7deg 100% 64%),hsl(7deg 100% 64%)), linear-gradient(hsl(301deg 100% 15%),hsl(301deg 100% 15%));
+  background-size: 50px 10px, 60px 10px;
+  background-position: 20px 40px, 20px 60px;
+  background-repeat: no-repeat;
+  text-align: center;
+}
